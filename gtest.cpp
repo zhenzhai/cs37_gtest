@@ -1,3 +1,6 @@
+"""
+This file contains all gtests for Project 3
+"""
 #include <gtest/gtest.h>
 
 #include "Minion.h"
@@ -32,9 +35,6 @@ TEST(operatorGreater, notgreater)
     Minion minion2("n2", 2, 0);
     GTEST_ASSERT_FALSE(minion1 > minion2);
 
-    Minion minion3("n3", 10, 0);
-    Minion minion4("n4", 200, 0);
-    GTEST_ASSERT_FALSE(minion3 > minion4);
 }
 
 TEST(operatorPreIncrement, increaseOne)
